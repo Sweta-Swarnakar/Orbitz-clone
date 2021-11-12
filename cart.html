@@ -305,14 +305,18 @@
        
        var H2 = document.createElement("h2");
         H2.textContent = hotelName;
-       var h4 = document.createElement("h4");
+
+        var H3 = document.createElement("h3");
+        H3.textContent = "Default hotel price = "+hotelPrice;
+      
+        var h4 = document.createElement("h4");
         h4.textContent = item.name;
         
         var h2 = document.createElement("h2");
-        h2.textContent = item.Price;
+        h2.textContent = "room price = " +item.Price;
         
 
-        imgDiv.append(img, H2, h4, h2,);
+        imgDiv.append(img, H2, H3, h4, h2,);
         mainDiv.append(imgDiv);
 
         document.querySelector("#cart").append(mainDiv);
@@ -349,7 +353,7 @@ function payment(e)
    
     if(name && cardNo && cardDate && year && cvv && zip && contact &&  mobile)
     {
-        window.alert("payment succesful");
+        window.alert("payment succesful and booking confirmed");
     }
 
     else
