@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/2bdb37b8af.js" crossorigin="anonymous"></script>
+
+    <title>HotelDetails</title>
+    <style>
+         .navbar{
+            width: 100%;
+            height: 80px;
+            background-color: #08213a;
+            color: white;
+            top: 0%;
+            display: flex;
+            margin-bottom: 10px;
+           
+        }
+
+        #imgDiv{
+            margin-left: 8%;
+            background-color: white;
+            margin-top: 20px;
+            margin-right: 30px;
+            height: 40px;
+        }
+
+   
+
+        .dropbtn, .dropBtn {
+        background-color: transparent;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      #icon{
+          padding: 8px;
+      }
+      .dropbtn:hover, .dropbtn:focus {
+        color: teal;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+     
+      
+      .dropdown-content , .dropdownContent{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 200px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 10px;
+      }
+      
+      .dropdown-content a, .dropdownContent a  {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+#right{
+     margin-left: 200px;
+     
+ }
+        #containers{
+            width: 90%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+        }
+
+        #menu{
+            width: 90%;
+            display: flex;
+            margin: auto;
+            color: gray;
+           
+        }
+        .dropbtns {
+        padding: 0 10px;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 0%;
+      }
+      .dropbtn:hover, .dropbtn:focus {
+        color: teal;
+        text-decoration: underline;
+      }
+        #images{
+            width: 90%;
+            display: flex;
+            margin: auto;
+    
+        }
+
+        #images:nth-child(2){
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-gap: 20px;
+            
+        }
+
+        #images:nth-child(1){
+            padding: 10px;
+        }
+        #des{
+            width: 99%;
+            display: flex;
+
+        }
+        #des > div{
+            width: 48%;
+            border: 1 px solid black;
+            padding-left: 70px;
+            
+        }
+       .checked{
+           color: gray;
+       }
+       
+       #des > div td{
+           
+           width: 550px;
+           color: gray;
+           font-size: 17px;
+           height: 30px;
+       }
+       .teal{
+           color: teal;
+       }
+       #Image{
+    width: 300px;
+    height: 300px;
+    padding-left: 200px;
+}
+
+
+
+#contains{
+            width: 98%;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            color: gray;
+           grid-gap: 2%;
+           margin: auto;
+           
+           
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+           margin-top: 20px;
+
+        }
+
+        #contains > div{
+            border: 1px solid gray;
+            
+            margin-left: 40px;
+        }
+
+        h2, p{
+            padding-left: 10px;
+        }
+
+
+
+
+h4{
+    padding-left: 10px;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
+
+       footer{
+    display: flex;
+    width: 90%;
+    margin: auto;
+  
+    margin-top: 60px;
+
+}
+
+footer div >img{
+    margin-top: 36px;
+}
+table{
+   margin: auto;
+   width: 100%;
+ 
+  
+}
+
+td{
+    color: teal;
+    width: 270px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 40px;
+    
+}
+td > a:hover{
+    text-decoration: underline;
+}
+h4{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.foot{
+    padding-left: 550px;
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+    
+}
+
+#button1 {
+    margin-left: 50%;
+    color: white;
+    background-color: rgb(129, 25, 25);
+    border: none;
+}
+
+#color{
+    width: 100px;
+    margin-left: 70%;
+    font-size: 18px;
+    height: 50px;
+    color: white;
+    background-color: rgb(129, 25, 25);
+    border: none;
+    margin-bottom: 30px;
+}
+
+headImg{
+    width: 100px;
+    background-color: red;
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class = "navbar">
+		
+            <div id="imgDiv">
+              <a href="index.html"><img style="width: 200px; height: 40px;" src= "https://logodix.com/logo/652892.png" /></a>
+            </div>
+             
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="margin-top: 9px;font-size: 16px;">More travels<i class="fas fa-angle-down" id="icon"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a><i class="fas fa-building"></i>Stays</a>
+                    <a><i class="fas fa-plane-departure"></i>Flights</a> 
+                    <a><i class="fas fa-boxes"></i>Packages</a>
+                    <a><i class="fas fa-car"></i>Cars</a> 
+                    <a><i class="fas fa-ship"></i>Cruises</a> 
+                    <a><i class="fad fa-container-storage"></i>Things to do</a> 
+                    <a>Deals</a>
+                    <a>Groups & meeting</a>
+                    <a>Travel Blog</a> 
+                </div>
+            </div>
+            
+            <div id="right">
+                <div class="dropdown">
+                    <p class="dropbtn"><a href="#" ></i></a>Español</p>
+                
+                </div> 
+                
+            
+                    
+        
+                <div class="dropdown">
+                    <p class="dropbtn"><a href="#" ></a>List your property</p>
+                
+                </div> 
+                
+                
+                <div class="dropdown">
+                    <p class="dropbtn"><a href="#" ></a>Support</p>
+                    
+                </div>   
+                
+                
+                
+                <div  class = "dropdown" id = "">
+                <p class="dropbtn"><a href="#" ></a>Trips</p>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="myFunctionTwo()" class="dropBtn" style="margin-top: 9px;font-size: 16px;">Sign In</button>
+                    <div id="Dropdown" class="dropdownContent">
+               
+                        <a>members can access discounts, points and special freatures</a>
+                        <a href="signIn.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Sign In</button></a> 
+                        <a href="signUp.html" style="color:teal;">Create free account</a>
+                        <a href="cart.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Cart</button></a>
+                        <a>List of favorites</a> 
+                        <a>Loyalty program</a>
+                        <hr> 
+                        <a style="color: gray;">Feedback</a> 
+                       
+                    </div>
+                </div>
+        
+            </div>    
+            
+           
+        </div>
+    
+
+    </nav>
+    <div id="containers">
+        <div id="images">
+            <div>
+            <img src="https://images.trvl-media.com/hotels/1000000/30000/20500/20421/41e24b81.jpg?impolicy=fcrop&w=598&h=338&p=1&q=medium">
+            </div>
+            <div>
+                <img src="https://images.trvl-media.com/hotels/1000000/30000/20500/20421/c3266c1e.jpg?impolicy=fcrop&w=297&h=167&p=1&q=medium">
+                <img src="https://images.trvl-media.com/hotels/1000000/30000/20500/20421/db3bec36.jpg?impolicy=fcrop&w=297&h=167&p=1&q=medium">
+               
+            </div>
+        </div>
+ 
+        <div id="menu">
+            <p class="dropbtns"><a href="#" ></i></a><u>OverView</u></p>
+        
+            <p class="dropbtns"><a href="#" ></a>Rooms</p>
+            <p class="dropbtns"><a href="#" ></a>Location</p>
+            <p class="dropbtns"><a href="#" ></a>Ameties</p>
+            <p class="dropbtns"><a href="#" ></a>Policies</p>
+            <p class="dropbtns"><a href="#" ></a>Reviews</p>
+            <button id="button1">Reserve Room</button>
+    
+        </div>   
+        <hr>
+        <div id="des">
+            <div>
+                <h1 id="tag"></h1>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <h5>4.8/Exceptional</h5>
+                <p>Guest rated this property for clealiness</p>
+                <p class="teal">506 Reviews > </p>
+
+                <h3>Popular Ameties</h3>
+                <table>
+                    <tr>
+                        <td><i class="fas fa-swimmer"></i>Pool</td>
+                        <td><i class="fas fa-snowflake"></i>Air Conditioning</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-times"></i>Spa</td>
+                        <td><i class="fab fa-product-hunt"></i>Parking included</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-wifi"></i>Free Wifi</td>
+                        <td>Laundry</td>
+                    </tr>
+                </table>
+                <p class="teal"><a>See All > </a></p>
+
+                <h3>Cleaning and Safety practices</h3>
+                <table>
+                    <tr>
+                        <td><i class="fa fa-swiming"></i>Cleaned with disinfectant</td>
+                        <td>Hand sanitizer provided</td>
+                    </tr>
+
+                    <tr>
+                        <td>Contactless Check-in</td>
+                        <td>Personal protective equipment</td>
+                    </tr>
+
+                </table>
+                <p class="teal">See All ></p>
+                  
+            </div>
+            
+            <div>
+                <img id="Image" src="https://www.google.com/maps/d/thumbnail?mid=1ftKwW0kVOxNHtF6vvKkxfeHfYhI&hl=en">
+                <p>15 Jawaharlal Nehru Road, Kolkata, West Bengal, 700 013</p>
+                <p class="teal">View in map ></p>
+
+                <h3>Explore the Area</h3>
+                <table>
+                    <tr>
+                        <td>New Market</td>
+                        <td>3 min walk</td>
+                    </tr>
+
+                    <tr>
+                        <td>Netaji indoor Stadium</td>
+                        <td>16 min talk</td>
+                    </tr>
+
+                    <tr>
+                        <td>Kolkata (CCU-Netaji Subhas Chandra Bose intl.)</td>
+                        <td>17 min drive</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</div>
+
+
+    
+        <div id="details"></div>
+        
+</div>
+
+  
+<footer>
+    <div>
+        <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg">
+    </div>
+
+    <div>
+    <table>
+        <tr>
+            <td><h4>Company</h4></td>
+             <td><h4>Explore</h4></td>
+            <td><h4>Policies</h4></td>
+            <td><h4>Help</h4></td>
+        </tr>
+
+        <tr>
+            <td><a>Abouts</a></td>
+            <td><a>Hotels in United States</a></td>
+            <td><a>Privacy Policy</a></td>
+            <td><a>Support</a></td>
+        </tr>
+
+        <tr>
+            <td><a>Jobs</a></td>
+            <td><a>vacation Rentals in United States</a></td>
+            <td><a>terms Of Use</a></td>
+            <td><a>Cancel your hotel or vacation rental booking</a></td>
+        </tr>
+
+        <tr>
+            <td><a>List your properties</a></td>
+            <td><a>Car rentals in United States</a></td>
+            <td><a>Orbitz Rewards terms</a></td>
+            <td><a>Refund timelines, Policies & processes </a></td>
+        </tr>
+
+        <tr>
+            <td><a>Partnerships</a></td>
+            <td><a>Domestic Flights</a></td>
+            <td><a>Do not sell my personal information</a></td>
+            <td><a>Use an Orbitz coupon</a></td>
+
+        </tr>
+
+        <tr>
+            <td><a>Newsroom</a></td>
+            <td><a>vacation packages in United states</a></td>
+            <td></td>
+            
+        </tr>
+
+        <tr>
+            <td><a>Investor Relations</a></td>
+            <td><a>Orbitz Review</a></td>
+            <td></td>
+            
+        </tr>
+
+        <tr>
+           <td><a>Site Map</a></td>
+           <td><a>Orbitz Coupons</a></td>
+        </tr>
+        <tr>
+            <td><a>Orbitz Rewards</a></td>
+            <td><a>LGBTQ Travel</a></td>
+        </tr>
+
+        <tr>
+            <td><a>Adverterising</a></td>
+            <td><a>Uniques Accommodations</a></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><a>Travel Blog</a></td>
+        </tr>
+
+    </table>
+</div>  
+
+</footer>
+
+<hr style="width: 90%;">  
+<div class="foot">© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.</div>
+   <div class="foot">Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</div>
+
+</body>
+</html>
+
+<script>
+    //downdown in nav bar
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    function myFunctionTwo() {
+      document.getElementById("Dropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropBtn')) {
+        var dropdowns = document.getElementsByClassName("dropdownContent");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    //nav done
+ var rooms = [
+     {
+         name: "Deluxe Room",
+         imgUrl : "https://images.trvl-media.com/hotels/1000000/30000/20500/20421/1a5ccff9.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+         Price: 138,
+     },
+
+     {
+         name: "Luxury Room",
+         imgUrl : "https://www.theparkhotels.com/images/site-specific/kolkata/rooms/rooms_banner.jpg",
+         Price: 148,
+     },
+
+     {
+         name: "Excutive Room",
+         imgUrl : "https://images.trvl-media.com/hotels/1000000/30000/20500/20421/88cdaa5b.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
+         Price: 161,
+     },
+ ];
+
+//to get unique hotel names
+var cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("tag").textContent = cart.name;
+
+ var body = document.querySelector("#details");
+ var mainDiv = document.createElement("div");
+ mainDiv.setAttribute("id", "contains");
+
+ body.append(mainDiv);
+
+ showProducts()
+
+ var Cart = JSON.parse(localStorage.getItem("CartItems")) || []; 
+ 
+ function showProducts()
+ {
+    rooms.map(function(item)
+    {
+        var imgDiv =  document.createElement("div");
+       var img = document.createElement("img");
+       img.setAttribute("src", item.imgUrl);
+       
+       var h4 = document.createElement("h4");
+        h4.textContent = item.name;
+        
+        var p1 = document.createElement("p");
+        p1.textContent = "377 sq ft";
+
+        var p2 = document.createElement("p");
+        p2.textContent = "City view";
+
+        var p3 = document.createElement("p");
+        p3.textContent = "Sleeps 4";
+        
+        var p4 = document.createElement("p");
+        p4.textContent = " 1 King Bed";
+        
+        var p5 = document.createElement("p");
+        p5.textContent = "Free WiFi";
+        
+        var p6 = document.createElement("p");
+        p6.textContent = "Free self parking";
+        
+        var p7 = document.createElement("p");
+        p7.textContent = "Reserve now, pay later";
+        
+        var p8 = document.createElement("p");
+        p8.textContent = "Fully refundable";
+        
+        var p9 = document.createElement("p");
+        p9.textContent = "Before Tue, Nov 23";
+
+        var p10 = document.createElement("p");
+        p10.textContent = "More details >";
+        
+        var hr = document.createElement("hr");
+        
+        var head = document.createElement("h4");
+        head.textContent = "Extras"
+
+        //table
+        
+        var tr1 = document.createElement("tr");
+              
+              var td1 = document.createElement("td");
+              td1.textContent = "No extras";
+              
+              var td2 = document.createElement("td");
+              td2.textContent = "+ $0";
+        tr1.append(td1, td2);   
+              
+              
+        var tr2 = document.createElement("tr");
+              
+            var td3 = document.createElement("td");
+            td3.textContent = "Breakfast buffet";
+              
+              var td4 = document.createElement("td");
+              td4.textContent = "+ $10";
+        
+        tr2.append(td3, td4);      
+
+        var tr3 = document.createElement("tr");
+              
+              var td5 = document.createElement("td");
+              td5.textContent = "Breakfast + oneway airport transfer";
+              
+              var td6 = document.createElement("td");
+              td6.textContent = "+ $27";
+        tr3.append(td5, td6);      
+
+        var tr4 = document.createElement("tr");
+              
+              var td7 = document.createElement("td");
+              td7.textContent = "Half board";
+              
+              var td8 = document.createElement("td");
+              td8.textContent = "+ $38";  
+        tr4.append(td7, td8);          
+       
+        
+        var tbody = document.createElement("tbody");
+
+        tbody.append(tr1, tr2, tr3, tr4);
+        console.log(tbody)
+
+        var h2 = document.createElement("h2");
+        h2.textContent = item.Price;
+
+        var btn = document.createElement("button");
+        btn.textContent = "Reserve";
+
+        btn.setAttribute("id", "color")
+
+        
+        btn.addEventListener("click", function(){
+
+        addToCart(item)
+
+        });
+        
+        
+        imgDiv.append(img, h4,p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, hr, head, tbody, h2, btn);
+
+        mainDiv.append(imgDiv);
+    })
+ }
+
+
+ function addToCart(item)
+    {
+      window.alert("Room added succesfully to cart");
+       Cart.push(item);
+     
+       localStorage.setItem("CartItems", JSON.stringify(Cart));
+       Cart = JSON.parse(localStorage.getItem("CartItems")) || [];
+       //console.log(cart)
+    }
+
+ 
+
+
+    
+
+
+</script>
+

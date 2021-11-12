@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and cart</title>
+    <style>
+
+.navbar{
+            width: 100%;
+            height: 80px;
+            background-color: #08213a;
+            color: white;
+            top: 0%;
+            display: flex;
+            margin-bottom: 10px;
+           
+        }
+
+        #imgDiv{
+            margin-left: 8%;
+           
+            margin-top: 20px;
+            margin-right: 850px;
+        }
+
+
+        .dropBtn {
+        background-color: transparent;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        
+      }
+      #icon{
+          padding: 8px;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+     
+      
+      .dropdownContent{
+        display: none;
+        justify-self: right;
+        background-color: #f1f1f1;
+        width: 300px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 10px;
+      }
+      
+      .dropdownContent a  {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+        body{
+            background-color:rgb(211, 218, 224);
+        }
+        h4{
+            margin-bottom: 0%;
+        }
+        #top{
+            width: 80%;
+            padding: 10px;
+            background-color: white;
+            margin: auto;
+            margin-bottom: 20px;
+           
+        }
+
+        #boxes{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 68% 30%;
+            grid-gap: 10px;
+            
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            
+        }
+
+        #sec{
+            width: 100%;
+            background-color: white;
+            padding: 5px;
+            color: blue;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+
+
+        #third{
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        input{
+            width: 250px;
+            height: 40px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #forth{
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        label{
+            margin-right: 100px;
+
+        }
+
+        #cvv, #zip{
+          width: 50px;
+          height: 30px;
+          margin-right: 150px;
+        }
+
+        input[type="submit"]{
+            background-color: rgb(158, 32, 32);
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+
+        #cart{
+            width: 100%;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            margin-left: 40px;
+        }
+
+    
+        #right{
+            width: 98%;
+            height: auto;
+          
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+
+        img{
+            width: 405px;
+        }
+       .star{
+           color: red;
+       }
+        
+       
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class = "navbar">
+		
+            <div id="imgDiv">
+              <a href="index.html"><img style="width: 200px;" src= "https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" /></a>
+            </div>
+         
+                <div class="dropdown">
+                    <button onclick="myFunctionTwo()" class="dropBtn" style="margin-top: 9px;font-size: 16px;">Sign In</button>
+                    <div id="Dropdown" class="dropdownContent">
+               
+                        <a>members can access discounts, points and special freatures</a>
+                        <a href="signIn.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Sign In</button></a> 
+                        <a href="signUp.html" style="color:teal;">Create free account</a>
+                        <a>List of favorites</a> 
+                        <a>Loyalty program</a>
+                        <hr> 
+                        <a style="color: gray;">Feedback</a> 
+                       
+                    </div>
+                </div>
+        
+            </div>    
+            
+           
+        </div>
+    
+
+    </nav>
+
+    <div id="top">
+        <h4>Free cancellation before Tue, Nov 23, 4:00pm (property local time)</h4>
+
+        <div>You can change or cancel this stay for a full refund if plans change. Because flexibility matters.</div>
+
+    </div>
+
+    <div id="boxes">
+        <div id="payment">
+            <div id="sec">
+                <h3>Sign in to earn $4.84 in Orbucks <i class="fas fa-angle-double-down"></i> </h3>
+            </div>
+            
+            <div id="third">
+                <h5>Room 1</h5>
+                <p> Breakfast included  Free parking  Free WiFi</p>
+                <label>Contact Name <span class="star">*</span></label>
+                <div>
+                <input type="text" id="contact" placeholder="First and Last name">
+                </div>
+                <h5>Please enter a first and last name using letters only.</h5>
+                <h4>Mobile Number<span class="star">*</span></h4>
+                <div>
+                <input type="number" id="mobile" placeholder="So the property can reach you">
+                </div>
+            </div>
+
+            <div id="forth">
+               <p> We use secure transmission  We protect your personal information</p>
+               <h4>Debit card Details</h4>
+               <form class =ab id="form">
+                    
+                <label for = "">Name on card<span class="star">*</span></label><br>
+                    <input type = "text" id = "name" ><br>
+                        
+                    <label>Debit/Credit Card number <span class="star">*</span></label><br>
+                    <input type = "text" id = "cardNo"><br>
+
+                    <label for = ""> Expiry Date <span class="star">*</span></label><br>
+                    <input type = "text" id = "date" placeholder="Month" > <input type = "text" id = "year" placeholder="year" ><br>
+                    
+                    <label for = "">Security code <span class="star">*</span></label>  <label>Billing zip code <span class="star">*</span></label><br>
+                    <input type = "text" id = "cvv" >
+
+                   
+                    <input type = "text" id = "zip" ><br>
+                    
+                    <input type="submit" value="Complete Booking">
+        
+               </form>
+            </div>
+        </div>
+        
+        <div id="cart">
+            <div id="container"></div>
+            <hr>
+            
+            <div id="right">
+                <h3>Price Details</h3>
+                <h3>Total Rooms = <span id="totalItems"></span></h3>
+                <h4>Taxes and feese = <span>$29</span></h4>
+                <h3>Total Price =  <span id="totalPrice"></span></h3>
+                <hr>
+            
+                
+            </div>
+            
+
+        </div>
+
+    </div>
+   
+    
+</body>
+</html>
+
+<script>
+       var mainDiv = document.getElementById("container");
+   // mainDiv.setAttribute("id", "container");
+    var cartItems = JSON.parse(localStorage.getItem("cartItems"));
+    
+    var CartItems = JSON.parse(localStorage.getItem("CartItems"));
+    var hotelName = cartItems.name;
+    var hotelPrice = cartItems.price;
+     //console.log(hotelPrice)
+
+    showHotels(CartItems, cartItems );
+    
+    function showHotels(hotels, hotel2)
+{
+   hotels.map(function(item)
+   {
+
+       
+       
+    var imgDiv =  document.createElement("div");
+       var img = document.createElement("img");
+       
+       img.setAttribute("src", item.imgUrl);
+       
+       var H2 = document.createElement("h2");
+        H2.textContent = hotelName;
+       var h4 = document.createElement("h4");
+        h4.textContent = item.name;
+        
+        var h2 = document.createElement("h2");
+        h2.textContent = item.Price;
+        
+
+        imgDiv.append(img, H2, h4, h2,);
+        mainDiv.append(imgDiv);
+
+        document.querySelector("#cart").append(mainDiv);
+
+    });
+
+    var totalP = CartItems.reduce(function(sum, currentPrice){
+       
+        return sum += Number(currentPrice.Price);
+    }, 29 + hotelPrice);
+    //console.log(totalP)
+    
+    document.querySelector("#totalPrice").textContent = totalP
+    document.querySelector("#totalItems").textContent = CartItems.length;
+
+}
+
+document.querySelector("#form").addEventListener("submit", payment)
+
+
+function payment(e)
+{
+    var contact = document.getElementById("contact").value;
+    var mobile = document.getElementById("mobile").value;
+    e.preventDefault();
+
+    var name = form.name.value;
+    var cardNo = form.cardNo.value;
+    var cardDate = form.date.value;
+    var year = form.year.value;
+    var cvv = form.cvv.value;
+    var zip = form.zip.value;
+    
+   
+    if(name && cardNo && cardDate && year && cvv && zip && contact &&  mobile)
+    {
+        window.alert("payment succesful");
+    }
+
+    else
+       
+       window.alert("All fields are mandetory");
+    //console.log(cardDate, cardtype, year, cvv, name )
+
+}
+
+
+//signin dropdown
+
+function myFunctionTwo() {
+        document.getElementById("Dropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropBtn')) {
+          var dropdowns = document.getElementsByClassName("dropdownContent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+</script>

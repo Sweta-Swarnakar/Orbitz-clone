@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2bdb37b8af.js" crossorigin="anonymous"></script>
+    
+    <title>home page</title>
+    <style>
+        .navbar{
+            width: 100%;
+            height: 80px;
+            background-color: #08213a;
+            color: white;
+            top: 0%;
+            display: flex;
+           
+        }
+
+        #imgDiv{
+            margin-left: 8%;
+           
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+
+        .dropbtn, .dropBtn {
+        background-color: transparent;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      #icon{
+          padding: 8px;
+      }
+      .dropbtn:hover, .dropbtn:focus {
+        color: teal;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+     
+      
+      .dropdown-content , .dropdownContent{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 200px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 10px;
+      }
+      
+      .dropdown-content a, .dropdownContent a  {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+#right{
+     margin-left: 400px;
+     
+ }
+
+ #background{
+     width: 100%;
+     background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+     height: 500px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     
+ }
+
+ #smallDiv{
+     width: 70%;
+     background-color: white;
+    padding-left: 10px;
+     height: auto;
+     margin: auto;
+     
+     
+
+ }
+ #list{
+     width: 100%;
+     display: grid;
+     grid-template-columns: 10% 10% 10% 10% 10%;
+     margin: auto;
+     margin-bottom: 0%;
+ }
+
+ #list > div{
+  margin-right: 10px;
+  color: gray;
+}
+
+#list > div:hover{
+   color: teal;
+   text-decoration: underline;
+}
+
+#inputs{
+      width: 100%;
+      margin: auto;
+      
+    }
+      #inputs > i {
+
+            position: absolute;
+            display: inline-block;
+            color: gray;
+            
+        }
+          
+        #inputs > i
+        {
+          padding: 20px;
+        }
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+          
+        .input-field {
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            font-size: 17px;
+            margin: 5px;
+        }
+
+        #checks{
+            margin-top: 20px;
+            color: gray;
+        }
+
+        
+        #button{
+          width: 140px;
+          height: 45px;
+          background-color: rgb(151, 22, 22);
+          margin: 5px;
+          color: white;
+          font-size: 17px;
+          border: none;
+          margin-left: 40%;
+          margin-top: 100px;
+          margin-bottom: 30px;
+        } 
+
+
+
+ #first{
+     width: 90%;
+     margin: auto;
+     display: flex;
+     flex-direction: row;
+     
+     height: 200px;
+     margin-top: 50px ;
+     margin-bottom: 30px;
+ }
+
+ #first > div{
+     width: 35%;
+     height: 90%;
+     padding: 10px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      margin: 0 10px;
+ }
+
+ 
+
+ img{
+     width: 100%;
+ }
+
+ #sec{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+   
+    margin: auto;
+    height: 360px;
+}
+
+#sec > div{
+    
+    width: 35%;
+     height: auto;
+     padding: 10px;
+    
+      margin: 0 10px;
+     
+}
+
+#sec > div:nth-child(1)
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#sec > div:nth-child(1) > div:nth-child(1){
+
+    width: 100%;
+    height: 68%;
+   
+
+}
+
+#IMG1{
+    min-width: 100%;
+    height: 70%;
+    background-image: url("https://tpc.googlesyndication.com/simgad/4074098988000929262?");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+h1{
+    margin-left: 5%;
+}
+
+
+#sec > div:nth-child(1) > div:nth-child(2) > img{
+  width: 50%;
+  height: 20%;
+  padding: 10px;
+}
+#bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18% auto;
+  
+    
+}
+
+h3, p{
+    padding-left: 6%;
+}
+
+.side{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 30% 40%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   margin-bottom: 40px;
+}
+
+#last{
+    width: 88%;
+    margin: auto;
+    background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/11/13/ORB_Storefront_VIP_Properties_1024x580.jpg");
+    height: 299px;
+   
+    margin-top: 40px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#last div:nth-child(1){
+   width: 26%;
+   color: white;
+   padding: 20px;
+   font-size: 22px;
+}
+
+#last div:nth-last-child(1){
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    color: gray;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    margin-top: 3.1%;
+    border-bottom: 1px solid gray;
+}
+ 
+#last div:nth-last-child(1) > a:hover{
+    text-decoration: underline;
+}
+#last div:nth-last-child(1) > a{
+    color: teal;
+}
+
+footer{
+    display: flex;
+    width: 90%;
+    margin: auto;
+  
+    margin-top: 60px;
+
+}
+
+footer div >img{
+    margin-top: 36px;
+}
+table{
+   margin: auto;
+   width: 100%;
+ 
+  
+}
+
+td{
+    color: teal;
+    width: 270px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 40px;
+    
+}
+td > a:hover{
+    text-decoration: underline;
+}
+h4{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.foot{
+    padding-left: 550px;
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+   
+    <!--Header-->
+    <nav>
+        <div class = "navbar">
+		
+            <div id="imgDiv">
+              <a href="index.html"><img src= "https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" /></a>
+            </div>
+             
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="margin-top: 9px;font-size: 16px;">More travels<i class="fas fa-angle-down" id="icon"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a><i class="fas fa-building"></i>Stays</a>
+                    <a><i class="fas fa-plane-departure"></i>Flights</a> 
+                    <a><i class="fas fa-boxes"></i>Packages</a>
+                    <a><i class="fas fa-car"></i>Cars</a> 
+                    <a><i class="fas fa-ship"></i>Cruises</a> 
+                    <a><i class="fad fa-container-storage"></i>Things to do</a> 
+                    <a>Deals</a>
+                    <a>Groups & meeting</a>
+                    <a>Travel Blog</a> 
+                </div>
+            </div>
+            
+            <div id="right">
+                <div class="dropdown">
+                    <p class="dropbtn"><a href="#" ></i></a>Español</p>
+                
+                </div> 
+                
+            
+                    
+        
+                <div class="dropdown">
+                    <p class="dropbtn"><a href="#" ></a>List your property</p>
+                
+                </div> 
+                
+                
+                <div class="dropdown">
+                    <p class="dropbtn"><a href="#" ></a>Support</p>
+                    
+                </div>   
+                
+                
+                
+                <div  class = "dropdown" id = "">
+                <p class="dropbtn"><a href="#" ></a>Trips</p>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="myFunctionTwo()" class="dropBtn" style="margin-top: 9px;font-size: 16px;">Sign In</button>
+                    <div id="Dropdown" class="dropdownContent">
+               
+                        <a>members can access discounts, points and special freatures</a>
+                        <a href="signIn.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Sign In</button></a> 
+                        <a href="signUp.html" style="color:teal;">Create free account</a>
+                        <a href="cart.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Cart</button></a>
+                        <a>List of favorites</a> 
+                        <a>Loyalty program</a>
+                        <hr> 
+                        <a style="color: gray;">Feedback</a> 
+                       
+                    </div>
+                </div>
+        
+            </div>    
+            
+           
+        </div>
+    
+
+    </nav>
+
+    <!--first div with background image-->
+    <div id="background">
+        
+        <div id="smallDiv">
+            <div id="list">
+                <div>
+                    <p><a href="#" ></a>Stays</p>
+                </div> 
+                
+                <div>
+                    <p><a href="#" ></a>Flights</p>
+                </div> 
+                
+                <div>
+                    <p><a href="#" ></a>Cars</p>
+                </div>   
+                
+                <div>
+                <p><a href="#" ></a>Packages</p>
+                </div>
+
+                <div>
+                    <p><a href="#" ></a>Things to do</p>
+                </div>
+            </div>
+        <hr>   
+
+        <div id="inputs">
+   
+            <i class='fas fa-map-marker-alt'></i>
+              <input class="input-field" type="text" id="location" placeholder="going to">
+              
+              <i class="far fa-calendar-check"></i>
+              <input class="input-field" type="text" id="checkIn" placeholder="Check-in">
+              
+              <i class="far fa-calendar-check"></i>
+              <input class="input-field" type="text" id="checkOut" placeholder="Check-out">
+              
+              <i class="fas fa-user"></i>
+              <input class="input-field" type="number" id="travelers" placeholder="travelers">
+              
+        </div>
+        <div id="checks"><input type="checkbox"><span>Add a flight</span><input type="checkbox"><span>Add a car</span></div>
+       <a href="hotels.html"><button id="button">Search</button></a>
+         
+        </div> 
+         
+        
+       
+    </div>
+
+    </div>
+
+    <!--1st div-->
+
+   <div id="first">
+       <div>
+           <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/06/11/ORB_BrandPromise_TravelAsYouAre_imgB_840x473_20210611.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh">
+       </div>
+       
+       <div>
+           <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/01/ORB_BrandPromise_Rewards_imgB_840x473_20210331.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh">
+       </div>
+       
+       <div>
+           <img src="https://forever.travel-assets.com/flex/flexmanager/images/2021/04/01/ORB_BrandPromise_IGLTA_imgB_840x473_20210330.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh">
+       </div>
+   </div>
+
+   <!--2nd div        -->
+   <h1>What's new</h1>
+
+   <div id="sec">
+    
+        <div>
+            <div id="IMG1"></div>
+            <div id="bottom">  
+                <div><img src="https://tpc.googlesyndication.com/simgad/1377272696808836502?"></div>
+                
+                    <div><h3>Time for family time</h3>
+                        <p>Hit the road in vacation mode</p>
+                    </div>
+
+            </div>
+        </div>
+        
+        <div>
+            <div class="side">
+                <div><img src="https://tpc.googlesyndication.com/simgad/10532870795500249626?'"></div>
+                <div><h3>flight under $199</h3>
+                 <p>Affordable fares are here, which is good, because you've waited long time for this vacation. </p>
+                </div>
+            </div>
+            
+            <div class="side" >
+                <div><img src= "https://forever.travel-assets.com/flex/flexmanager/images/2020/11/13/ORB_Storefront_SmallMarquee_LocalGetaways_164x152.jpg?impolicy=fcrop&w=300&h=300&q=mediumHigh" ></div>
+                <div><h3>last-Minute Deals</h3>
+                    <p>Book a last-Minute stay because sometimes the best things in life are unplanned.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="last">
+        <div><h1>Properties with added perks</h1></div>
+        <div>When you look for the VIP access badge, you can expect excellence and, for our most loyal members,extra perks.<a>See more</a> </div>
+    </div>
+    
+    <footer>
+        <div>
+            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg">
+        </div>
+
+        <div>
+        <table>
+            <tr>
+                <td><h4>Company</h4></td>
+                 <td><h4>Explore</h4></td>
+                <td><h4>Policies</h4></td>
+                <td><h4>Help</h4></td>
+            </tr>
+
+            <tr>
+                <td><a>Abouts</a></td>
+                <td><a>Hotels in United States</a></td>
+                <td><a>Privacy Policy</a></td>
+                <td><a>Support</a></td>
+            </tr>
+
+            <tr>
+                <td><a>Jobs</a></td>
+                <td><a>vacation Rentals in United States</a></td>
+                <td><a>terms Of Use</a></td>
+                <td><a>Cancel your hotel or vacation rental booking</a></td>
+            </tr>
+
+            <tr>
+                <td><a>List your properties</a></td>
+                <td><a>Car rentals in United States</a></td>
+                <td><a>Orbitz Rewards terms</a></td>
+                <td><a>Refund timelines, Policies & processes </a></td>
+            </tr>
+
+            <tr>
+                <td><a>Partnerships</a></td>
+                <td><a>Domestic Flights</a></td>
+                <td><a>Do not sell my personal information</a></td>
+                <td><a>Use an Orbitz coupon</a></td>
+
+            </tr>
+
+            <tr>
+                <td><a>Newsroom</a></td>
+                <td><a>vacation packages in United states</a></td>
+                <td></td>
+                
+            </tr>
+
+            <tr>
+                <td><a>Investor Relations</a></td>
+                <td><a>Orbitz Review</a></td>
+                <td></td>
+                
+            </tr>
+
+            <tr>
+               <td><a>Site Map</a></td>
+               <td><a>Orbitz Coupons</a></td>
+            </tr>
+            <tr>
+                <td><a>Orbitz Rewards</a></td>
+                <td><a>LGBTQ Travel</a></td>
+            </tr>
+
+            <tr>
+                <td><a>Adverterising</a></td>
+                <td><a>Uniques Accommodations</a></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><a>Travel Blog</a></td>
+            </tr>
+
+        </table>
+    </div>  
+  
+    </footer>
+    <hr style="width: 90%;">  
+    <div class="foot">© 2021 Orbitz, LLC, an Expedia Group Company. All rights reserved.</div>
+       <div class="foot">Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</div>
+
+    
+</body>
+</html>
+
+<script>
+    
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+
+      function myFunctionTwo() {
+        document.getElementById("Dropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropBtn')) {
+          var dropdowns = document.getElementsByClassName("dropdownContent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+</script>

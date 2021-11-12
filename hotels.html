@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2bdb37b8af.js" crossorigin="anonymous"></script>
+  <title>hotels</title>
+  <style>
+     .navbar{
+            width: 100%;
+            height: 80px;
+            background-color: #08213a;
+            color: white;
+            top: 0%;
+            display: flex;
+           
+        }
+
+        #imgDiv{
+            margin-left: 8%;
+           
+            margin-top: 20px;
+            margin-right: 30px;
+        }
+
+        .dropbtn, .dropBtn {
+        background-color: transparent;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      #icon{
+          padding: 8px;
+      }
+      .dropbtn:hover, .dropbtn:focus {
+        color: teal;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+     
+      
+      .dropdown-content , .dropdownContent{
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 200px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 10px;
+      }
+      
+      .dropdown-content a, .dropdownContent a  {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+#right{
+     margin-left: 400px;
+     
+ }
+
+ /*Done with nav bar */
+
+ #inputs{
+      width: 80%;
+      margin: auto;
+    }
+      #inputs > i {
+
+            position: absolute;
+            display: inline-block;
+            color: gray;
+            
+        }
+          
+        #inputs > i
+        {
+          padding: 20px;
+        }
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+          
+        .input-field {
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            font-size: 17px;
+            margin: 5px;
+        }
+
+        #bigBox{
+          width: 99%;
+          display: grid;
+          grid-template-columns: 10% 70% 10%;
+          grid-gap: 10px;
+      
+          height: auto;
+        }
+
+
+        #button, #low, #high{
+          width: 140px;
+          height: 45px;
+          background-color: rgb(151, 22, 22);
+          margin: 5px;
+          color: white;
+          font-size: 17px;
+          border: none;
+        }
+
+        img, span{
+          display: flex;
+        }
+
+       
+          #container > div{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            padding: 10px;
+        
+        }
+
+        #color{
+          color: teal;
+        }
+
+        .reserve{
+          width: 140px;
+          height: 45px;
+          background-color: rgb(151, 22, 22);
+          margin: 5px;
+          color: white;
+          font-size: 17px;
+          border: none;
+        }
+  </style>
+</head>
+<body>
+   <nav>
+    <div class = "navbar">
+
+        <div id="imgDiv">
+          <a href="index.html"><img src= "https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2" /></a>
+        </div>
+         
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="margin-top: 9px;font-size: 16px;">More travels<i class="fas fa-angle-down" id="icon"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a><i class="fas fa-building"></i>Stays</a>
+                <a><i class="fas fa-plane-departure"></i>Flights</a> 
+                <a><i class="fas fa-boxes"></i>Packages</a>
+                <a><i class="fas fa-car"></i>Cars</a> 
+                <a><i class="fas fa-ship"></i>Cruises</a> 
+                <a><i class="fad fa-container-storage"></i>Things to do</a> 
+                <a>Deals</a>
+                <a>Groups & meeting</a>
+                <a>Travel Blog</a> 
+            </div>
+        </div>
+        
+        <div id="right">
+            <div class="dropdown">
+                <p class="dropbtn"><a href="#" ></i></a>Español</p>
+            
+            </div> 
+            
+        
+                
+    
+            <div class="dropdown">
+                <p class="dropbtn"><a href="#" ></a>List your property</p>
+            
+            </div> 
+            
+            
+            <div class="dropdown">
+                <p class="dropbtn"><a href="#" ></a>Support</p>
+                
+            </div>   
+            
+            
+            
+            <div  class = "dropdown" id = "">
+            <p class="dropbtn"><a href="#" ></a>Trips</p>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="myFunctionTwo()" class="dropBtn" style="margin-top: 9px;font-size: 16px;">Sign In</button>
+                <div id="Dropdown" class="dropdownContent">
+           
+                    <a>members can access discounts, points and special freatures</a>
+                    <a href="signIn.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Sign In</button></a> 
+                    <a href="signUp.html" style="color:teal;">Create free account</a>
+                    <a href="cart.html"><button style="border: none; width: 100px; background-color: rgb(151, 22, 22); color: white; height: 30px;">Cart</button></a>
+                    <a>List of favorites</a> 
+                    <a>Loyalty program</a>
+                    <hr> 
+                    <a style="color: gray;">Feedback</a> 
+                   
+                </div>
+            </div> 
+    
+        </div>    
+        
+       
+    </div>
+
+
+</nav> 
+
+<div id="inputs">
+ 
+  <i class='fas fa-map-marker-alt'></i>
+  <input class="input-field" type="text" id="location" placeholder="going to">
+  
+  <i class="far fa-calendar-check"></i>
+  <input class="input-field" type="text" id="checkIn" placeholder="Check-in">
+  
+  <i class="far fa-calendar-check"></i>
+  <input class="input-field" type="text" id="checkOut" placeholder="Check-out">
+  
+  <i class="fas fa-user"></i>
+  <input class="input-field" type="number" id="travelers" placeholder="travelers">
+  
+    <button id="button">Search</button>
+
+</div>
+
+<div>
+<button class="sort" id="low">Low To High</button>
+    <button class="sort" id="high">High To low</button>
+</div>
+<div id="bigBox">
+
+<div id="settings"></div>
+<div id="containers"></div>
+<div id="ads">
+<img src="https://tpc.googlesyndication.com/simgad/6636177451645377630?">
+</div>
+</div>
+  
+</body>
+</html>
+
+<script>
+ 
+var kolkataHotels =[
+    {
+      name: "The Oberoi Grand, Kolkata",
+      imageurl: "https://images.trvl-media.com/hotels/1000000/30000/20500/20421/41e24b81.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+      price: 74,
+
+    },
+
+    {
+      name: "JW marriott Hotel Kolkata",
+      imageurl: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/17000000/16480000/16474800/16474794/9fa0cdab_b.jpg",
+      price: 108,
+    },
+
+    {
+      name: "ITC Royal Bengal, a luxury Collection Hotel, Kolkata",
+      imageurl: "https://images.trvl-media.com/hotels/38000000/37600000/37590700/37590630/37b9c391.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+      price: 97,
+    },
+
+    {
+      name: "Hyatt Regency Kolkata",
+      imageurl: "https://images.trvl-media.com/hotels/1000000/900000/890500/890428/481a8aa0.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+      price: 92,
+    },
+
+    {
+      name: "Kalinworth Hotel, Kolkata",
+      imageurl: "https://images.trvl-media.com/hotels/1000000/20000/12100/12075/9ae0a11e.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+      price: 78,
+    },];
+
+    var bangaloreHotels = [{
+      name:"Aloft Bengaluru Cessna Business park",
+      imageurl: "https://images.trvl-media.com/hotels/9000000/8020000/8013600/8013547/e3eca8e1.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+      price: 43,
+  },
+{
+  name: "The Ritz-Carlton, Bangalore",
+  imageurl: "https://images.trvl-media.com/hotels/7000000/6470000/6468000/6467933/5a7a1030.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+  price: 169,
+},
+
+{
+ name: "Air Avenue Hotel",
+ imageurl: "https://images.trvl-media.com/hotels/47000000/46970000/46969700/46969671/666dfc5d.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+ price: 27,
+},
+
+{
+  name: "Taj West End",
+  imageurl: "https://images.trvl-media.com/hotels/1000000/470000/465100/465008/eb5aa034.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium",
+  price: 201,
+},];
+
+     
+
+
+
+
+var body = document.querySelector("#containers");
+ var mainDiv = document.createElement("div");
+ mainDiv.setAttribute("id", "container");
+
+ body.append(mainDiv);
+
+ 
+ document.querySelector("#button").addEventListener("click", showHotels);
+ 
+ 
+ showHotels()
+
+ var cart = JSON.parse(localStorage.getItem("cartItems")) || []; 
+
+ 
+ function showHotels()
+ {
+  var location = document.getElementById("location").value;
+ var travelers = document.getElementById("travelers").value;
+  mainDiv.innerHTML = "";
+  
+
+  if(location == "Kolkata" || location == "KOLKATA" || location == "kolkata")
+  {
+     kolkataHotels.map(function(item)
+    {
+        var imgDiv =  document.createElement("div");
+       var img = document.createElement("img");
+       
+       img.setAttribute("src", item.imageurl);
+        
+       var p = document.createElement("p");
+        p.textContent = "Click on image to see in details"
+        p.setAttribute("id", "color");
+        
+        var h1 = document.createElement("h1");
+        h1.textContent = item.name;
+        
+        var h2 = document.createElement("h2");
+        h2.textContent = item.price;
+       
+        var text = document.createElement("span");
+        text.textContent = "Fully Refundable, Reserve now Pay later. Stay at unbeatable rates with complimentary breakfast and wifi.Free stay for kids below 12 years old."
+        
+        var btn = document.createElement("button");
+        btn.textContent = "Reserve Hotels";
+        btn.setAttribute("class", "reserve")
+
+        btn.addEventListener("click", function(){
+
+            addToCart(item)
+            
+        });
+
+        
+        img.addEventListener("click", function(){
+          hotelDetails()
+        });
+
+        
+        imgDiv.append(img, p, h1, h2, text,btn);
+        
+        mainDiv.append(imgDiv);
+    });
+  }
+
+
+  else if(location == "Bangalore" || location == "bangalore" || location == "BANGALORE" || location == "Bengaluru")
+  {
+     bangaloreHotels.map(function(item)
+    {
+        var imgDiv =  document.createElement("div");
+       var img = document.createElement("img");
+       
+       img.setAttribute("src", item.imageurl);
+
+       var p = document.createElement("p");
+        p.textContent = "Click on image to see in details"
+        p.setAttribute("id", "color");
+        
+        var h1 = document.createElement("h1");
+        h1.textContent = item.name;
+       
+        var h2 = document.createElement("h2");
+        h2.textContent = item.price;
+        
+        var text = document.createElement("span");
+        text.textContent = "Fully Refundable, Reserve now Pay later. Stay at unbeatable rates with complimentary breakfast and wifi.Free stay for kids below 12 years old."
+        
+        var btn = document.createElement("button");
+        btn.setAttribute("class", "reserve")
+        btn.textContent = "Reserve";
+
+        btn.addEventListener("click", function(){
+
+            addToCart(item)
+        
+         });
+
+         
+        img.addEventListener("click", function(){
+          hotelDetails()
+        }) 
+
+        
+        imgDiv.append(img, p, h1, h2, text,btn);
+        
+        mainDiv.append(imgDiv);
+    })
+  }
+
+  
+  function addToCart(item)
+    {
+      window.alert("hotel added succesfully click on image to choose your room");
+       cart.push(item);
+     
+       localStorage.setItem("cartItems", JSON.stringify(item));
+      
+       //console.log(cart)
+    }
+
+ }
+
+
+document.getElementById("low").addEventListener("click", sortLtoH);
+document.getElementById("high").addEventListener("click", sortHtoL);
+
+sortLtoH()
+sortHtoL()
+
+
+    
+  function sortLtoH(){
+
+    var location = document.getElementById("location").value;
+ var travelers = document.getElementById("travelers").value;
+    
+ if(location == "Kolkata" || location == "KOLKATA" || location == "kolkata")
+    {
+      
+    kolkataHotels.sort(function(a,b){
+        return a.price - b.price;
+      });
+	  showHotels(kolkataHotels)
+    }
+  
+  else if(location == "Bangalore" || location == "bangalore" || location == "BANGALORE" || location == "Bengaluru")
+  {
+      bangaloreHotels.sort(function(a,b){
+        return a.price - b.price;
+      })
+	  showHotels(bangaloreHotels)
+    }
+  }
+
+//sort high to low
+
+function  sortHtoL(){
+
+var location = document.getElementById("location").value;
+var travelers = document.getElementById("travelers").value;
+
+if(location == "Kolkata" || location == "KOLKATA" || location == "kolkata")
+{
+  kolkataHotels.sort(function(a,b){
+    return b.price - a.price ;
+  })
+showHotels(kolkataHotels)
+}
+else if(location == "Bangalore" || location == "bangalore" || location == "BANGALORE" || location == "Bengaluru")
+{
+  bangaloreHotels.sort(function(a,b){
+    return  b.price - a.price ;
+  })
+showHotels(bangaloreHotels)
+}
+}
+
+function hotelDetails()
+{
+  window.location.href = "hotelDetails.html"
+}
+
+
+ 
+    
+ 
+</script>
+
+<script>
+  //for dropdown of nav bars
+ 
+  //for more travels
+   function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      //for sign in
+      function myFunctionTwo() {
+        document.getElementById("Dropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropBtn')) {
+          var dropdowns = document.getElementsByClassName("dropdownContent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      //done dropdown
+</script>
